@@ -362,15 +362,14 @@
         </div>
     
         <div class="footer-input-form">
-<form name="signup_form" autocomplete="on" novalidate>
+<form>
 <label class="footer-form" for="input-form">Подпишитесь на рассылку</label>
 <input class="footer-mail-form" type="email" name="email" id="input-form" placeholder="E-mail"/>
 
-</form>
 <button class="footer-input-button" type="submit" >Подписаться<span class="button-input-icon">
     <svg width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg>
 </span></button>
-
+</form>
         </div>
     </div>
     </footer>
@@ -378,26 +377,34 @@
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal"  >
-            <p>Оставьте свои данные, мы вам перезвоним</p>
-<form>
-    <label for="name">Имя</label>
-    <input type="text" name="name" id="name"/>
-</form>
+            <p class="modal-desk">Оставьте свои данные, мы вам перезвоним</p>
+            
+<form  >
+    <div class="modal-form">
+    <label class="modal-form-label" for="name">Имя</label>
+    <input class="modal-form-input" type="text" name="name" id="name"  required/>
+    <span ><svg class="modal-form-icon"><use href="./images/icons.svg#icon-modal-person"></use></svg></span>
+</div>
 
-<form>
-    <label for="tel">Телефон</label>
-    <input type="tel" name="tel" id="tel"/>
-</form>
+<div class="modal-form">
+    <label class="modal-form-label" for="tel">Телефон</label>
+    <input class="modal-form-input" type="tel" name="tel" id="tel"  required/>
+<span ><svg class="modal-form-icon"><use href="./images/icons.svg#icon-modal-phone"></use></svg></span>
+</div>
 
-<form>
-    <label for="mail">Почта</label>
-    <input type="mail" name="mail" id="mail"/>
-</form>
+<div class="modal-form">
+
+    <label class="modal-form-label" for="mail">Почта</label>
+    <input class="modal-form-input" type="mail" name="mail" id="mail"  required/>
+<span ><svg class="modal-form-icon"><use href="./images/icons.svg#icon-mail-modal"></use></svg></span>
+</div>
+
 <label for="comments">Коментарий</label>
 <textarea></textarea>
 <input type="checkbox">
-<button type="submit">Отправить</button>
 
+<button type="submit">Отправить</button>
+</form>
             <button type="button" class="button-close" data-modal-close>
                 <svg class="close-icon"><use href="./images/icons.svg#icon-close"></use></svg>
             </button>
