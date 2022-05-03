@@ -608,6 +608,7 @@ address { margin-top: 20px ;}
   background-color: var(--background-footer-color);
   color: var(--text-color-white);
   width: 358px;
+  height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -632,6 +633,7 @@ address { margin-top: 20px ;}
   border-radius: 4px;
   padding: 10px 62px 10px 29px;
   letter-spacing: 0,06em;
+  margin-left: 12px;
 }
 
 
@@ -809,16 +811,57 @@ overflow: hidden;
   height: 581px;
   width: 528px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 } 
+
+.modal-desk {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.modal-form {
+  position: relative;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-form-label{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.modal-form-input{
+  display: block;
+  width: 448px;
+  height: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+padding: 0 39px 0 41px;
+margin-bottom: 28px;
+}
+
 
 .backdrop.is-hidden{
   pointer-events: none;
   opacity: 0;
 }
+
 .backdrop.is-hidden .modal{
   transform: translate(-50%,-50%) translate(20%,30%);
 }
+
 .close-icon{
   width: 18px;
   height: 18px;                               
@@ -838,4 +881,8 @@ overflow: hidden;
   cursor: pointer;
 }
   
+
+.close-icon:hover {
+  fill: var(--akcent);
+}
 
