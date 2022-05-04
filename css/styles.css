@@ -627,12 +627,10 @@ address { margin-top: 20px ;}
   color: var(--text-color-white);
   font-size: 16px;
   font-weight: var(--font-weight-bold);
-  line-height: 1.87;
   width: 200px;
   height: 50px;
   border-radius: 4px;
   padding: 10px 62px 10px 29px;
-  letter-spacing: 0,06em;
   margin-left: 12px;
 }
 
@@ -822,23 +820,22 @@ overflow: hidden;
   text-align: center;
 }
 
+.modal-box {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
 .modal-form {
   position: relative;
 }
 
-.modal-form-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-}
-
 .modal-form-label{
   display: block;
-  margin-bottom: 4px;
+  color: var(--secondary-text-color);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
+  margin-bottom: 4px;
 }
 
 .modal-form-input{
@@ -848,10 +845,73 @@ overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-padding: 0 39px 0 41px;
-margin-bottom: 28px;
+margin-bottom: 10px;
+padding: 12px 42px;
+cursor: pointer;
 }
 
+.modal-form-input:focus {
+ border: 1px solid var(--akcent);
+ outline: none;
+ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon {
+  color: var(--primary-text-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 45%;
+  left: 13px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.form-icon:focus {
+ color: var(--akcent);
+}
+
+
+.modal-form-comments {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.modal-form-comments:focus {
+  border: 1px solid var(--akcent);
+ outline: none;
+ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button {
+  display: block;
+margin-inline: auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--akcent);
+  color: var(--text-color-white);
+  border-radius: 4px;
+border: none;
+}
+
+.modal-form-checkbox {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+}
+
+.modal-form-link {
+  color: var(--akcent);
+}
 
 .backdrop.is-hidden{
   pointer-events: none;
