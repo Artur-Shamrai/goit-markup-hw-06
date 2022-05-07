@@ -395,21 +395,22 @@
 <div class="modal-form">
 
     <label class="modal-form-label" for="mail">Почта</label>
-    <input class="modal-form-input" type="mail" name="mail" id="mail"  required/>
+    <input class="modal-form-input" type="email" name="mail" id="mail"  required/>
 <span class="modal-form-icon"><svg class="form-icon"><use href="./images/icons.svg#icon-mail-modal"></use></svg></span>
 </div>
 
-<div class="modal-form">
-<label class="modal-form-label" for="comments">Коментарий</label>
-<textarea class="modal-form-comments " name="comments" id="comments" placeholder="Введите текст"></textarea>
-</div>
 
-<label class="modal-form-checkbox">
-<input type="checkbox" required>
+<label class="modal-form-label" for="comments">Коментарий</label>
+<textarea class="modal-form-comments " name="comments" id="comments" placeholder= "Введите текст" ></textarea>
+
+
+<label class="modal-checkbox">
+<input class=" modal-checkbox-icon hidden" type="checkbox" required>
+<span class="checkbox-icon"></span>
 Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="">Условия договора</a></label>
 
 
-<button class="modal-form-button" type="submit">Отправить</button>
+<button class="modal-form-button" type="submit"><span class="modal-button-text">Отправить</span></button>
 </form>
             <button type="button" class="button-close" data-modal-close>
                 <svg class="close-icon"><use href="./images/icons.svg#icon-close"></use></svg>
