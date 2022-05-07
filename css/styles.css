@@ -862,7 +862,7 @@ cursor: pointer;
 
 .form-icon {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 13px;
   width: 18px;
   height: 18px;
@@ -912,10 +912,6 @@ font-size: 16px;
   line-height: 1.87;
 }
 
-/* .hidden {
-  clip-path: inset(100%);
-  
-} */
 
 .modal-checkbox-icon {
   appearance: none;
